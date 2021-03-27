@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id # 自己star启动
     steps:
-    - name: Point Zero
+    - name: Setup timezone
       uses: zcong1993/setup-timezone@v1.1.1
       with:
         timezone: Asia/Shanghai
@@ -37,8 +37,8 @@ jobs:
         tail run.log   
     - name: Commit log
       env:
-        NAME: merrycodes
-        EMAIL: merrycodes@163.com
+        NAME: lingdian
+        EMAIL: 1759407994@qq.com
       run: |
         git config --global user.name "$NAME"
         git config --global user.email "$EMAIL"
