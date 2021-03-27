@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id # 自己star启动
     steps:
-    - name: Setup
+    - name: Point Zero
       uses: ling_2@dian03.onmicrosoft.com
       with:
         timezone: Asia/Shanghai
