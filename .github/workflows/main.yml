@@ -17,7 +17,7 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id # 自己star启动
     steps:
     - name: Setup timezone
-      uses: 202087970@
+      uses: 202087970@qq.com
       with:
         timezone: Asia/Shanghai
     - uses: actions/checkout@v2
