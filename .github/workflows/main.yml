@@ -16,8 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id # 自己star启动
     steps:
-    - name: Setup timezone
-      uses: 202087970@qq.com
+    - name: Setup
+      uses: 1759407994@qq.com
       with:
         timezone: Asia/Shanghai
     - uses: actions/checkout@v2
